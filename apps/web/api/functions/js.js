@@ -5,7 +5,7 @@ const base64 = require('base-64');
 const githubToken = process.env.GITHUB_TOKEN
 const repoOwner = 'andyvauliln'; // Replace with the repository owner's username
 const repoName = 'turbo-demo'; // Replace with the repository name
-const filePath = 'apps/web/api/create/js.js';
+const filePath = 'apps/web/api/functions/new.js';
 
 console.log(process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG, 'data');
 console.log(process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER, 'data');
@@ -13,6 +13,8 @@ console.log(process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF, 'data');
 console.log(process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA, 'data');
 console.log(process.env.NEXT_PUBLIC_VERCEL_URL, 'data');
 console.log(process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL, 'data');
+console.log(process.env.GITHUB_TOKEN, 'token');
+console.log(process.env, 'ENV');
 
 const jsCode = `
 export default function handler(req, res) {
@@ -44,7 +46,7 @@ async function commitFileToGithub(str) {
             },
             data: {
                 message: 'Created new file via API',
-                content: base64.encode(fileContent)
+                content: base64.encode(jsCode)
             }
         });
         console.log('3', response, 'data');
