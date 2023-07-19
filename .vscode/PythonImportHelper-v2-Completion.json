@@ -1,0 +1,19 @@
+[
+    {
+        "label": "BaseHTTPRequestHandler",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "handler",
+        "kind": 6,
+        "importPath": "apps.web.api.functions.py",
+        "description": "apps.web.api.functions.py",
+        "peekOfCode": "class handler(BaseHTTPRequestHandler):\n    def do_GET(self):\n        self.send_response(200)\n        self.send_header('Content-type', 'text/plain')\n        self.end_headers()\n        self.wfile.write('Hello, world!'.encode('utf-8'))\n        return",
+        "detail": "apps.web.api.functions.py",
+        "documentation": {}
+    }
+]
