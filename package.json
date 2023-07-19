@@ -13,28 +13,23 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
-    "prettier": "latest",
-    "turbo": "latest",
-    "@next/bundle-analyzer": "^12.3.1",
-    "@types/node": "^20.4.1",
-    "@types/react": "^18.2.14",
+    "@next/bundle-analyzer": "^12.3.4",
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.15",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "^10.4.14",
     "eslint": "8.41.0",
-    "eslint-config-next": "13.4.3",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-tailwindcss": "^3.13.0",
-    "postcss": "^8.4.25",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.26",
+    "prettier": "latest",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "supabase": "^1.75.3",
-    "tailwindcss": "^3.3.2",
+    "supabase": "^1.77.9",
+    "tailwindcss": "^3.3.3",
+    "turbo": "latest",
     "typescript": "^5.1.6"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@7.18.1"
 }
